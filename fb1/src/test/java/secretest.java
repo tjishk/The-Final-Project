@@ -1,20 +1,22 @@
+import chrome.chromrunner;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.Test;
+
+import org.testng.annotations.Test;
+
 
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.sleep;
 
-public class secretest {
+public class secretest extends chromrunner {
     @Test
     public  void tests4(){
 
-     WebDriverManager.chromedriver().setup();
-     Selenide.open("https://online.irao.ge/ka/login");
+
         $(byId("submitBtn")).shouldBe(Condition.disabled);
-     $(by("name","personalNumber")).setValue("33001066142");
+        $(by("name","personalNumber")).setValue("33001066142");
         $(by("id","password")).setValue("123123");
          $(byId("submitBtn")).shouldBe(Condition.enabled);
          sleep(5000);
