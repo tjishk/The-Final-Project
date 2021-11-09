@@ -1,31 +1,35 @@
 package stepobjects;
 
-import dataobject.registrationdata;
 import pageobject.registrationpage;
 
 public class registrationsteps extends registrationpage {
+    public registrationsteps getpage(){
+        getpersonalpage.click();
+        return this;
+    }
     public registrationsteps clickregbuton () {
         createnewaccount.click();
         return this;
     }
 
-    public registrationsteps setID(String PersonalID) {
+    public registrationsteps setidnumber (String PersonalID) {
         personalID.setValue(PersonalID);
         return this;
     }
 
-    public registrationsteps setemailaddress(String emailaddress) {
-        registrationdata.mail.setValue(emailaddress);
+    public registrationsteps setemailaddress(String Loginemail) {
+
+        emailaddress.setValue(Loginemail);
         return this;
     }
 
     public registrationsteps setpassword(String password) {
-        password.setValue(password);
+        passentinp.setValue(password);
         return this;
     }
 
-    public autorizationsteps clickregiostratiobbut() {
-        autenterinp.click();
+    public registrationsteps clickregiostratiobbut() {
+        pressreginp.click();
         return this;
 
     }

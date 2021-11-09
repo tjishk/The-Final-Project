@@ -5,11 +5,12 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
+
 public class chromrunner {
 
     @BeforeTest
     public static void setup(){     WebDriverManager.chromedriver().setup();
-        Selenide.open("https://online.irao.ge/ka/login");
+        Selenide.open("https://irao.ge/");
     }
  @AfterTest
     public static void clear(){

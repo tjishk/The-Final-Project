@@ -7,6 +7,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class registrationpage {
     protected SelenideElement
+            getpersonalpage = $(by("class","btn sm_profile")),
             createnewaccount =$(byText("რეგისტრაცია")),
             personalID = $(byId("personalNumber")),
             emailaddress = $(byName("email")),

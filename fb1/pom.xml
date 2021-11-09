@@ -14,10 +14,11 @@
     </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.codeborne/selenide -->
+        <!-- https://mvnrepository.com/artifact/com.codeborne/selenide -->
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
-            <version>6.0.1 </version>
+            <version>5.2.4</version>
         </dependency>
 
         <dependency>
@@ -26,17 +27,29 @@
             <version>5.0.3</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.4.0</version>
+            <version>6.14.3</version>
+            <scope>test</scope>
         </dependency>
+
 
         <dependency>
             <groupId>net.sourceforge.jexcelapi</groupId>
             <artifactId>jxl</artifactId>
             <version>2.6.12</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-selenide -->
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.14.3</version>
+            <scope>compile</scope>
+        </dependency>
+
 
     </dependencies>
     <build>

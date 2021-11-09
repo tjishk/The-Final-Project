@@ -5,6 +5,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 import org.testng.annotations.Test;
 import stepobjects.autorizationsteps;
+import stepobjects.registrationsteps;
 
 
 import static com.codeborne.selenide.Selectors.*;
@@ -18,10 +19,22 @@ public class secretest extends chromrunner {
     public  void tests4(){
         autorizationsteps steps = new autorizationsteps();
         steps
+                .getpage()
                 .setvalueid(personalNumber)
                 .setvalupassword(Password)
                 .clickautorizacionbat();
 
 }
+    @Test
+    public void test2(){
+        registrationsteps steps = new registrationsteps();
+                steps
+                        .getpage()
+                         .clickregbuton()
+                        .setidnumber("33001066142")
+                        .setemailaddress("tinatin.jishkariani@irao.ge")
+                        .setpassword("123456")
+                        .clickregiostratiobbut();
+    }
 
 }
