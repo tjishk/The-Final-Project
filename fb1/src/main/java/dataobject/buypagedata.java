@@ -2,5 +2,14 @@ package dataobject;
 
 public interface buypagedata {
    String
-    petname="miu",
+    name="miu",
+   color="white",
+   petvar="ბიგლი",
+   Namegeorgia="თინათინ",
+   Fmgeorg="ჯიშკარიანი",
+   Ownerid="12345678910";
+
+
+   int
+   age=1;
 }

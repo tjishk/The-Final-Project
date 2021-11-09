@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$;
 public class byupage {
     protected SelenideElement
         getpage=$(by("class","btn btn-danger buyOnline")),
-        ckliktextauton=$(by("xmlns","http://www.w3.org/2000/svg")),
+        ckliktexbauton=$(by("xmlns","http://www.w3.org/2000/svg")),
         setname=$(by("name","PetFirstName")),
         setpetage=$(by("name","PetAgeID")),
         setpetcolor=$(by("name","PetColor")),
@@ -18,9 +18,9 @@ public class byupage {
         ckliccomtiniue=$(byXpath("/html/body/app-root/app-main-layout/app-pet/app-tell-about-your-pet/form/div/app-navigation-button/div/button[2]/span")),
         namegeorgia=$(by("name","model.nameGeo")),
         fmgeorg=$(by("name","model.surnameGeo")),
-        ownerid=$(by("name","model.personalNumber"),
-        tawn=$(by("name","model.contactInformation.cityID")),
-                
+        ownerid=$(by("name","model.personalNumber"));
+
+
 
 
 

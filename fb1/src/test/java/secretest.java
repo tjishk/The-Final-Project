@@ -5,6 +5,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 import org.testng.annotations.Test;
 import stepobjects.autorizationsteps;
+import stepobjects.buysteps;
 import stepobjects.registrationsteps;
 
 
@@ -15,6 +16,7 @@ import static dataobject.autorizationdata.Password;
 import static dataobject.autorizationdata.personalNumber;
 
 public class secretest extends chromrunner {
+
     @Test
     public  void tests4(){
         autorizationsteps steps = new autorizationsteps();
@@ -35,6 +37,25 @@ public class secretest extends chromrunner {
                         .setemailaddress("tinatin.jishkariani@irao.ge")
                         .setpassword("123456")
                         .clickregiostratiobbut();
+    }
+    @Test
+
+      public void test1(){
+        buysteps steps = new buysteps();
+        steps
+                .Getpage()
+                .clickbuy()
+                .setname("MIU")
+                .setpetage('1')
+                .setcolor("white")
+                .clicksex()
+                .clickcomtiniue()
+                .namegeorgia("თინათინ")
+                .fmgeorg("ჯიშკარიანი")
+                .ownerid("12345678910");
+
+
+
     }
 
 }
