@@ -4,12 +4,8 @@ public interface buypagedata {
    String
     name="miu",
    color="white",
-   petvar="ბიგლი",
-   Namegeorgia="თინათინ",
-   Fmgeorg="ჯიშკარიანი",
-   Ownerid="12345678910";
+   brande="ბიგლი",
+   age="1 თვე";
 
 
-   int
-   age=1;
 }

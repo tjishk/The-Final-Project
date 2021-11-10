@@ -2,6 +2,6 @@ package dataobject;
 
 public interface autorizationdata {
     String
-      personalNumber ="33001066142",
+      personalNumber ="12345678910",
       Password = "123123";
 }

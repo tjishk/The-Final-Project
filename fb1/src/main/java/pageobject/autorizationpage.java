@@ -7,10 +7,12 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class autorizationpage {
     protected SelenideElement
+            isvisible=$(by("class","switcher eng round")),
+            isnotvisible=$(byName("ავტომატიზაცია")),
             getinp = $(by("class","btn sm_profile")),
             personalNumber = $(by("name","personalNumber")),
             password = $(by("id","password")),
-            autenterinp = $(byCssSelector("ავტორიზაცია"));
+            autenterinp = $(byText("ავტორიზაცია"));
 
 
 }
