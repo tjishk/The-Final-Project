@@ -1,6 +1,6 @@
 package dataobject;
 
-import com.sun.jna.WString;
+
 
 public interface registrationdata {
     String

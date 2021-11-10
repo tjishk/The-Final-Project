@@ -9,7 +9,8 @@ import org.testng.annotations.BeforeTest;
 public class chromrunner {
 
     @BeforeTest
-    public static void setup(){     WebDriverManager.chromedriver().setup();
+    public static void setup(){
+        WebDriverManager.chromedriver().setup();
         Selenide.open("https://irao.ge/");
     }
  @AfterTest

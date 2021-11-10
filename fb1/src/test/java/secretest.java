@@ -25,12 +25,11 @@ public class secretest extends chromrunner {
                 .setvalueid(personalNumber)
                 .setvalupassword(Password)
                 .clickautorizacionbat();
-
 }
     @Test
     public void test2(){
         registrationsteps steps = new registrationsteps();
-                steps
+        steps
                         .getpage()
                          .clickregbuton()
                         .setidnumber("33001066142")
