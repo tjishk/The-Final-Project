@@ -21,9 +21,24 @@ public class autorizationpagetests extends chromrunner {
         autorizationsteps steps = new autorizationsteps();
         steps
                 .Isvizible()
-                .Isnotvizible()
+                .isdizableavtorn()
+                .chekinsornid()
                 .setvalueid("12345678910")
+                .chekinsornpass()
                 .setvalupassword("123123")
                 .clickautorizacionbat();
+    }
+    @Test
+    public  void tests5(){
+        autorizationsteps steps = new autorizationsteps();
+        steps
+                .Isvizible()
+                .isdizableavtorn()
+                .chekinsornid()
+                .Passrecbut()
+                .Passrectext()
+                .Idinpassrecpage()
+                .Passrecidnumb("12345678910")
+                .Emailradiobut();
     }
 }
