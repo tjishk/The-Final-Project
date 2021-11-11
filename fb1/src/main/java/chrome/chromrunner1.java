@@ -19,4 +19,18 @@ public class chromrunner1 {
         Selenide.clearBrowserLocalStorage();
     }
 
+    public static class chromrunner {
+
+        @BeforeTest
+        public static void setup(){
+            WebDriverManager.chromedriver().setup();
+            Selenide.open("https://online.irao.ge/ka/login");
+        }
+     @AfterTest
+        public static void clear(){
+            Selenide.clearBrowserCookies();
+            Selenide.clearBrowserLocalStorage();
+     }
+
+     }
 }

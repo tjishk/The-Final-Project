@@ -1,21 +1,12 @@
-import chrome.chromrunner;
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selenide;
-import io.github.bonigarcia.wdm.WebDriverManager;
+import chrome.chromrunner1;
 
 import org.testng.annotations.Test;
-import stepobjects.autorizationsteps;
-import stepobjects.buysteps;
 import stepobjects.registrationsteps;
 
 
-import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.sleep;
-import static dataobject.autorizationdata.Password;
-import static dataobject.autorizationdata.personalNumber;
 
-public class regpagetests extends chromrunner {
+public class regpagetests extends chromrunner1.chromrunner {
 
     @Test
     public void test2(){
@@ -23,9 +14,34 @@ public class regpagetests extends chromrunner {
         steps
 
                 .clickregbuton()
+                .inregpage()
+                .Isemptyperidvalue()
                 .setidnumber("33001066142")
+                .Isemptyemailvalue()
                 .setemailaddress("tinatinjishkariani88@gmail.com")
+                .Isemptypassvalue()
                 .setpassword("123456")
                 .clickregiostratiobbut();
     }
+    @Test
+    public void test7(){
+        registrationsteps steps = new registrationsteps();
+        steps
+                .clickregbuton()
+                .inregpage()
+                .seenornottextargakvspolisi()
+                .Seenornottextsheidzineonlain()
+                .Seenornottextregistracia()
+                .Seenornottextid()
+                .Seenornottextmail()
+                .Seenornotpasstext()
+                .Languagechangebutclick()
+                .Seenornottextengbybuy()
+                .Seenornottextbuyonline()
+                .Seenornottextpersonalnumber()
+                .Seenornottextemlaileng()
+                .SeenornotPasswordeng();
+
+
+}
 }

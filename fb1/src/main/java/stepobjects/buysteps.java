@@ -1,5 +1,6 @@
 package stepobjects;
 
+import com.codeborne.selenide.Condition;
 import pageobject.byupage;
 
 public class buysteps extends byupage {
@@ -47,6 +48,25 @@ public class buysteps extends byupage {
         ckliccomtiniue.click();
         return this;
    }
+    public buysteps Chekfirtssteppage(){
+        chekfirtssteppage.shouldBe(Condition.visible);
+        return this;
 
+    }
+    public buysteps Chekerormesfirstst(){
+        chekerormesfirstst.shouldBe(Condition.visible);
+        return this;
+
+    }
+    public buysteps setcoloringclick(){
+        setpetcolor.click();
+        return this;
+
+    }
+    public buysteps TextcollisNecessary(){
+        textcollisNecessary.shouldBe(Condition.visible);
+        return this;
+
+    }
 
 }
