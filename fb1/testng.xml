@@ -2,10 +2,40 @@
 
 <suite name="Automation Suite" thread-count="3" parallel="tests">
 
+    <test name="TestSuit8" parallel="tests" >
+        <classes>
+            <class name="autorizationpagetests" />
+
+        </classes>
+    </test>
     <test name="TestSuit3" parallel="tests" >
         <classes>
-            <class name="secretest" />
-            <class name="" />
+            <class name="autorizationpagetests2" />
+
+        </classes>
+    </test>
+    <test name="TestSuit9" parallel="tests" >
+        <classes>
+            <class name="buypagetests" />
+        </classes>
+    </test>
+    <test name="TestSuit4" parallel="tests" >
+        <classes>
+            <class name="byupagetest2" />
+        </classes>
+    </test>
+    <test name="TestSuit5" parallel="tests" >
+        <classes>
+
+            <class name="regpagetests" />
+
+        </classes>
+    </test>
+    <test name="TestSuit6" parallel="tests" >
+        <classes>
+
+            <class name="regpagetest2" />
+
         </classes>
     </test>
 </suite>
